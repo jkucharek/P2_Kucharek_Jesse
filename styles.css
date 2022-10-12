@@ -9,10 +9,11 @@
 	grid-template-columns: 100%;
 	grid-auto-rows: auto;
 	max-width: 1920px;
-	min-width: 320px;
+	min-width: 360px;
 	text-align: center;
 	margin: auto 20px;
 	grid-gap: 20px;
+	width: 360px;
 	
 }
 
@@ -74,14 +75,17 @@ header div {
 #searchField {
 	border: solid rgb(9, 93, 126) 2px; 
 	border-radius: 5px 0 0 5px;
-	font-size: 1.5rem;
 	color: rgb(9, 93, 126);
 }
 
+#searchField:focus {
+	outline: none; 
+	background-color: rgb(236, 236, 236);
+}
+
 #searchButton {
-	border-top: solid rgb(9, 93, 126) 2px;
-	border-right: solid rgb(9, 93, 126) 2px;
-	border-bottom: solid rgb(9, 93, 126) 2px;
+	border: solid rgb(9, 93, 126) 2px;
+	border-left: none;
 	border-radius: 0 5px 5px 0;
 }
 
@@ -94,17 +98,42 @@ header div {
 
 /*banner formatting*/
 #banner {
-	height: 200px;
+	height: 180px;
 	background-color: rgb(9, 93, 126);
 	display: grid;
-	grid-template-columns: auto 200px;
+	grid-template-columns: auto 180px;
 }
 
-#banner div {border: solid black 1px;
+#banner div {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	
 }
-#banner img {height: 160px; width: 160px;margin: 0 auto;}
+
+#banner img {
+	height: 150px; 
+	width: 150px;
+	margin: 0 auto;
+}
+
+#banner span:nth-of-type(odd){
+	color: rgb(254, 215, 0);
+	margin: 25px 0;
+	transform: scale(1, 2);
+}
+
+#banner span:nth-of-type(1) {
+	font-size: 1rem;
+}
+
+#banner span:nth-of-type(2) {
+	color: rgb(236, 236, 236);
+	font-size: 0.6rem;
+	transform: scale(1, 1.5);
+	padding-bottom: 5px;
+}
+
+#banner span:nth-of-type(3) {
+	font-size: .75rem;
+}
 
