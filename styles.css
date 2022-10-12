@@ -8,7 +8,8 @@
 	display: grid;
 	grid-template-columns: 100%;
 	grid-auto-rows: auto;
-	max-width: 1920px;
+	!max-width: 1920px;
+	max-width: 767px;
 	min-width: 360px;
 	text-align: center;
 	margin: auto 20px;
@@ -16,9 +17,14 @@
 	
 }
 
+a {
+	text-decoration: none;
+}
+
+
 
 /*header formatting*/
-header{
+header {
 	background-color: rgb(254, 215, 0);
 	margin: 0;
 	padding: 10px;
@@ -88,6 +94,7 @@ header div {
 	border: solid rgb(9, 93, 126) 2px;
 	border-left: none;
 	border-radius: 0 5px 5px 0;
+	height: 62px;
 }
 
 #searchAndCart img {
@@ -106,7 +113,7 @@ header div {
 	margin-top: 20px;
 }
 
-#banner div {
+#banner a {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -118,7 +125,7 @@ header div {
 	margin: 0 auto;
 }
 
-#banner span:nth-of-type(odd){
+#banner span:nth-of-type(odd) {
 	color: rgb(254, 215, 0);
 	margin: 25px 0;
 	transform: scale(1, 2);
@@ -159,6 +166,10 @@ header div {
 	margin: 0 auto;
 }
 
+#categories a {
+	color: rgb(9, 93, 126);
+}
+
 
 
 
@@ -196,12 +207,12 @@ main img {
 
 
 /*slightly bigger mobile devices*/
-@media (min-width: 580px) {
+@media (min-width: 600px) {
 	#searchField {
 		font-size: 1.5rem;
 	}
 	
-	#banner span:nth-of-type(odd){
+	#banner span:nth-of-type(odd) {
 		transform: scale(1, 1);
 		margin: 0;
 	}
