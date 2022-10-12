@@ -1,50 +1,87 @@
 <!doctype html>
 
 <html lang="en">
-<head>
-  <meta charset="utf-8">
+	<head>
+		<meta charset="utf-8">
 
-  <title>ACME Corp.</title>
-  <meta name="description" content="Fictitious Business Project Home Page">
-  <link rel="stylesheet" href="styles.css">
+		<title>ACME Corp.</title>
+		<meta name="description" content="Fictitious Business Project Home Page">
+		<link rel="stylesheet" href="styles.css">
 
-</head>
+	</head>
 
-<body>
-	<div id="content">
-		<header>
-			<div id="logo">ACME</div>
-			<div id="title">HOME</div>
-			<div id="hamburger"><span><hr/><hr/><hr/><span></div>
-		</header>
-		<section id="searchAndCart">
-			<input type="text" placeholder="Search..." id="searchField">
-			<input type="image" src="images/search.png" id="searchButton">
-			<div></div>
-			<img src="images/cart.png">
-		</section>
-		<section id="banner">
-			<div>
-				<span>END OF SUMMER SALE</span>
-				<span>Enjoy up to 50% off select products!<br/>Free shipping on orders over $50!<br/>Free gift with every purchase!</span>
-				<span>HURRY,<br/>SALE ENDS LABOR DAY</span>
-			</div>
-			<div><img src="images/diyTornado.png"></div>
-		</section>
-		<section id="categories">
-			<span><img src="images/industrial.png"><p>Industrial</p></span>
-			<span><img src="images/diyKits.png"><p>DIY Kits</p></span>
-			<span><img src="images/birdSeed.png"><p>Bird Seed</p></span>
-			<span><img src="images/misc.png"><p>Misc</p></span>
-		</section>
-		<section id="BSandNA">
-			<span><img src="images/bestSellers.png"></span>
-			<span></span>
-			<span><img src="images/newArrivals.png"></span>
-		</section>
-		<main>
-			<span><p>SHOP ALL PRODUCTS<p></span>
-			<span><img src="images/collage_mobile.png"></span>
-		</main>
-	</div>
-</body>
+	<body>
+		<div id="content">
+			<header>
+				<div id="logo">ACME</div>
+				<div id="title">HOME</div>
+				<div id="hamburger"><span><hr/><hr/><hr/><span></div>
+			</header>
+
+			<section id="searchAndCart">
+				<input type="text" placeholder="Search..." id="searchField">
+				<input type="image" src="images/search.png" id="searchButton">
+				<div></div>
+				<a href="cart.html"><img src="images/cart.png"></a>
+			</section>
+
+			<section id="banner">
+				<a href="sale.html">
+					<div>
+						<span>END OF SUMMER SALE</span>
+						<br/>
+						<span>Enjoy up to 50% off select products!<br/>Free shipping on orders over $50!<br/>Free gift with every purchase!</span>
+						<br/>
+						<span>HURRY,<br/>SALE ENDS LABOR DAY</span>				
+					</div>
+				</a>
+				<a href="sale.html"><img src="images/diyTornado.png"></a>
+
+			</section>
+
+			<section id="categories">
+				<a href="industrial.html">
+					<span>
+						<img src="images/industrial.png">
+						<p>Industrial</p>
+					</span>
+				</a>
+				<a href="diyKits.html">
+					<span>
+						<img src="images/diyKits.png">
+						<p>DIY Kits</p>
+					</span>
+				</a>
+				<a href="birdSeed.html">
+					<span>
+						<img src="images/birdSeed.png">
+						<p>Bird Seed</p>
+					</span>
+				</a>
+				<a href="misc.html">
+					<span>
+						<img src="images/misc.png">
+						<p>Misc</p>
+					</span>
+				</a>
+			</section>
+
+			<section id="BSandNA">
+				<a href="bestSellers.html">
+					<span><img src="images/bestSellers.png"></span>
+				</a>
+				<span></span>
+				<a href="newArrivals.html">
+					<span><img src="images/newArrivals.png"></span>
+				</a>
+			</section>
+
+			<main>
+				<a href="allProducts.html">
+					<span><p>SHOP ALL PRODUCTS<p></span>
+					<span><img src="images/collage_mobile.png"></span>
+				</a>
+			</main>
+		</div>
+	</body>
+</html>
