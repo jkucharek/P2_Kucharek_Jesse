@@ -26,7 +26,7 @@
 				<p>Industrial Products</p>
 				<p>DIY Kits</p>
 				<p>Bird Seed</p>
-				<p> Misc Products</p>
+				<p>Misc Products</p>
 				<p>About us</p>
 				<p>Contact us</p>
 			</nav>
@@ -97,4 +97,15 @@
 			</main>
 		</div>
 	</body>
+
+	<script>
+		document.getElementsByTagName('nav')[0].style.maxHeight = "0px";
+
+		document.getElementById('hamburger').addEventListener("click", function() {
+			if(document.getElementsByTagName('nav')[0].style.maxHeight == "0px")
+				document.getElementsByTagName('nav')[0].style.maxHeight = document.getElementsByTagName('nav')[0].scrollHeight + "px";
+			else
+				document.getElementsByTagName('nav')[0].style.maxHeight = "0px";
+		});
+	</script>
 </html>
