@@ -7,6 +7,7 @@
 		<title>ACME Corp.</title>
 		<meta name="description" content="Fictitious Business Project Home Page">
 		<link rel="stylesheet" href="styles.css">
+		<script src="script.js" type="text/javascript"></script>
 
 	</head>
 
@@ -19,16 +20,16 @@
 			</header>
 
 			<nav>
-				<p>Shop All</p>
-				<p>Sales</p>
-				<p>Best Sellers</p>
-				<p>New Arrivals</p>
-				<p>Industrial Products</p>
-				<p>DIY Kits</p>
-				<p>Bird Seed</p>
-				<p>Misc Products</p>
-				<p>About us</p>
-				<p>Contact us</p>
+				<a href="allProducts.html">Shop All</a>
+				<a href="sale.html">Sales</a>
+				<a href="bestSellers.html">Best Sellers</a>
+				<a href="newArrivals.html">New Arrivals</a>
+				<a href="industrial.html">Industrial Products</a>
+				<a href="diyKits.html">DIY Kits</a>
+				<a href="birdSeed.html">Bird Seed</a>
+				<a href="misc.html">Misc Products</a>
+				<a href="about.html">About us</a>
+				<a href="contact.html">Contact us</a>
 			</nav>
 
 			<section id="searchAndCart">
@@ -97,15 +98,4 @@
 			</main>
 		</div>
 	</body>
-
-	<script>
-		document.getElementsByTagName('nav')[0].style.maxHeight = "0px";
-
-		document.getElementById('hamburger').addEventListener("click", function() {
-			if(document.getElementsByTagName('nav')[0].style.maxHeight == "0px")
-				document.getElementsByTagName('nav')[0].style.maxHeight = document.getElementsByTagName('nav')[0].scrollHeight + "px";
-			else
-				document.getElementsByTagName('nav')[0].style.maxHeight = "0px";
-		});
-	</script>
 </html>
