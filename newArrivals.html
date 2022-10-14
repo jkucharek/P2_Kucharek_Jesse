@@ -7,16 +7,16 @@
 		<title>ACME Corp. - New Arrivals</title>
 		<meta name="description" content="Fictitious Business Project New Arrivals Page">
 		<link rel="stylesheet" href="styles_underConstruction.css">
-		<script src="script.js" type="text/javascript"></script>
+		<script src="script.js"></script>
 
 	</head>
 
 	<body>
 		<div id="mobileContent">
 			<header>
-				<a href="index.html"><div id="logo">ACME</div></a>
+				<a href="index.html"><div class="logo">ACME</div></a>
 				<div id="title">NEW ARRIVALS</div>
-				<div id="hamburger"><span><hr/><hr/><hr/><span></div>
+				<div id="hamburger"><hr><hr><hr></div>
 			</header>
 
 			<nav>
@@ -32,24 +32,25 @@
 				<a href="contact.html">Contact us</a>
 			</nav>
 
-			<section id="searchAndCart">
+			<div id="searchAndCart">
 				<input type="text" placeholder="Search..." id="searchField">
-				<input type="image" src="images/search.png" id="searchButton" onclick="mobileQuery()">
+				<input type="image" src="images/search.png" id="searchButton" onclick="mobileQuery()" alt="Image of a magnifying glass.">
 				<div></div>
-				<input type="image" src="images/cart.png" id="cart" onclick="loadCart()">
-			</section>
-
-			<section id="banner">
-				<p>This page is currently under construction.</p>
-			</section>
+				<input type="image" src="images/cart.png" class="cart" onclick="loadCart()" alt="Image of a shopping cart.">
+			</div>
+			<main id="mobileMain">
+				<div class="banner">
+					<p>This page is currently under construction.</p>
+				</div>
+			</main>
 		</div>
 
 		<div id="desktopContent">
 			<header>
-				<a href="index.html"><div id="logo">ACME</div></a>
+				<a href="index.html"><div class="logo">ACME</div></a>
 				<div><input type="text" placeholder="Search..." id="desktopSearchField"></div>
-				<input type="image" src="images/search.png" id="desktopSearchButton" onclick="desktopQuery()">
-				<input type="image" src="images/cart.png" id="cart" onclick="loadCart()">
+				<input type="image" src="images/search.png" id="desktopSearchButton" onclick="desktopQuery()" alt="Image of a magnifying glass.">
+				<input type="image" src="images/cart.png" class="cart" onclick="loadCart()" alt="Image of a shopping cart.">
 			</header>
 			
 			<nav>
@@ -58,10 +59,11 @@
 				<a href="birdSeed.html">Bird Seed</a>
 				<a href="misc.html">Misc</a>
 			</nav>
-			
-			<section id="banner">
-				<p>This page is currently under construction.</p>
-			</section>
+			<main id="desktopMain" hidden>
+				<div class="banner">
+					<p>This page is currently under construction.</p>
+				</div>
+			</main>
 		</div>
 	</body>
 </html>

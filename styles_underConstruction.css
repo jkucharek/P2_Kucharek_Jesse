@@ -26,7 +26,7 @@ a {
 
 /*header formatting*/
 header {
-	background-color: rgb(254, 215, 0);
+	background: rgb(254, 215, 0);
 	margin: 0;
 	padding: 10px;
 	height: 60px;
@@ -43,8 +43,8 @@ header div {
 	justify-content: center;
 }
 
-#logo {
-	background-color: white;
+.logo {
+	background: white;
 	color: red;
 	font-size: 1.25rem;
 	border-radius: 8px;
@@ -66,7 +66,7 @@ header div {
 }
 
 #hamburger:hover {
-	background-color: rgb(9, 93, 126);
+	background: rgb(9, 93, 126);
 }
 
 #hamburger:hover hr {
@@ -80,6 +80,8 @@ header div {
 	background: rgb(9, 93, 126);
 	border: 0;
 	transition: 0.4s;
+	margin-top: 4px;
+	margin-bottom: 4px;
 }
 
 
@@ -95,7 +97,7 @@ nav {
 }
 
 nav a {
-	background-color: rgb(236, 236, 236);
+	background: rgb(236, 236, 236);
 	margin: 0;
 	padding: 1%;
 	font-size: 1.5rem;
@@ -106,7 +108,7 @@ nav a {
 }
 
 nav a:hover {
-	background-color: rgb(9, 93, 126);
+	background: rgb(9, 93, 126);
 	color: rgb(236, 236, 236);
 }
 
@@ -140,7 +142,7 @@ nav a:last-of-type {
 
 #searchField:focus {
 	outline: none; 
-	background-color: rgb(236, 236, 236);
+	background: rgb(236, 236, 236);
 }
 
 #searchButton {
@@ -149,7 +151,7 @@ nav a:last-of-type {
 	border-radius: 0 5px 5px 0;
 }
 
-#cart {
+.cart {
 	margin-left: 10px;
 	margin-top: 3px;
 }
@@ -158,16 +160,16 @@ nav a:last-of-type {
 
 
 /*banner formatting*/
-#banner {
+.banner {
 	height: 180px;
-	background-color: rgb(9, 93, 126);
+	background: rgb(9, 93, 126);
 	margin-top: 20px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 }
 
-#banner p {
+.banner p {
 	color: rgb(254, 215, 0);
 	font-size: 2rem;
 }
@@ -179,21 +181,21 @@ nav a:last-of-type {
 		font-size: 1.5rem;
 	}
 	
-	#banner span:nth-of-type(odd) {
+	.banner span:nth-of-type(odd) {
 		transform: scale(1, 1);
 		margin: 0;
 	}
 
-	#banner span:nth-of-type(1) {
+	.banner span:nth-of-type(1) {
 		font-size: 2rem;
 	}
 
-	#banner span:nth-of-type(2) {
+	.banner span:nth-of-type(2) {
 		font-size: 1rem;
 		transform: scale(1, 1);
 	}
 
-	#banner span:nth-of-type(3) {
+	.banner span:nth-of-type(3) {
 		font-size: 1.5rem;
 	}
 }
@@ -220,7 +222,7 @@ nav a:last-of-type {
 		display: flex;
 	}
 	
-	#logo {
+	.logo {
 		width: 60px;
 	}
 
@@ -248,7 +250,7 @@ nav a:last-of-type {
 		
 	}
 	
-	#cart {
+	.cart {
 		position: relative;
 		left: 97px;
 		top: -2px;
