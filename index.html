@@ -12,7 +12,7 @@
 	</head>
 
 	<body>
-		<div id="content">
+		<div id="mobileContent">
 			<header>
 				<div id="logo">ACME</div>
 				<div id="title">HOME</div>
@@ -32,14 +32,14 @@
 				<a href="contact.html">Contact us</a>
 			</nav>
 
-			<section id="searchAndCart">
+			<section id="searchAndCart" class="mobile">
 				<input type="text" placeholder="Search..." id="searchField">
 				<input type="image" src="images/search.png" id="searchButton">
 				<div></div>
-				<a href="cart.html"><img src="images/cart.png"></a>
+				<input type="image" src="images/cart.png" id="cart">
 			</section>
 
-			<section id="banner">
+			<section id="banner" class="mobile">
 				<a href="sale.html">
 					<div>
 						<span>END OF SUMMER SALE</span>
@@ -96,6 +96,16 @@
 					<span><img src="images/collage_mobile.png"></span>
 				</a>
 			</main>
+		</div>
+
+		<div id="desktopContent">
+			<header>
+				<div id="logo">ACME</div>
+				<div><input type="text" placeholder="Search..." id="desktopSearchField"></div>
+				<input type="image" src="images/search.png" id="desktopSearchButton">
+				<div></div>
+				<input type="image" src="images/cart.png" id="cart">
+			</header>
 		</div>
 	</body>
 </html>

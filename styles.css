@@ -3,13 +3,12 @@
 /*rgb(236, 236, 236) third color */
 
 
-#content {
+#mobileContent, #desktopContent {
 	font-family: "Myriad Pro", sans-serif;
 	display: grid;
 	grid-template-columns: 100%;
 	grid-auto-rows: auto;
-	!max-width: 1920px;
-	max-width: 767px;
+	max-width: 1920px;
 	min-width: 360px;
 	text-align: center;
 	margin: auto 20px;
@@ -20,6 +19,15 @@
 a {
 	text-decoration: none;
 }
+
+#desktopContent {
+	display: none;
+}
+
+#mobileContent {
+	display: grid;
+}
+
 
 
 
@@ -57,7 +65,7 @@ header div {
 }
 
 #hamburger {
-	background-color: rgb(236, 236, 236);
+	background: rgb(236, 236, 236);
 	border-radius: 8px;
 	line-height: 0.75;
 	cursor: pointer;
@@ -71,6 +79,7 @@ header div {
 #hamburger:hover hr {
 	background: rgb(236, 236, 236);
 }
+
 
 #hamburger hr {
 	width: 60%;
@@ -92,7 +101,7 @@ nav {
 	transition: max-height 0.2s ease-out;
 }
 
-nav p {
+nav a {
 	background-color: rgb(236, 236, 236);
 	margin: 0;
 	padding: 1%;
@@ -103,17 +112,19 @@ nav p {
 
 }
 
-nav p:hover {
+nav a:hover {
 	background-color: rgb(9, 93, 126);
 	color: rgb(236, 236, 236);
 }
 
-nav p:first-of-type {
 
+
+
+nav a:first-of-type {
 	border-radius: 15px 15px 0px 0px;
 }
 
-nav p:last-of-type {
+nav a:last-of-type {
 	border-radius: 0px 0px 15px 15px;
 	border-bottom: none;
 }
@@ -147,7 +158,7 @@ nav p:last-of-type {
 	height: 62px;
 }
 
-#searchAndCart img {
+#cart {
 	margin-left: 10px;
 	margin-top: 3px;
 }
@@ -256,8 +267,16 @@ main img {
 }
 
 
-/*slightly bigger mobile devices*/
-@media (min-width: 600px) {
+
+
+
+
+
+
+
+
+/*formatting for tablets*/
+@media (min-width: 600px) and (max-width: 1023px){
 	#searchField {
 		font-size: 1.5rem;
 	}
@@ -286,5 +305,43 @@ main img {
 	
 	main p {
 		font-size: 2.5rem;
+	}
+}
+
+
+/*formatting for desktops*/
+@media (min-width: 1024px) {
+	#mobileContent {
+		display: none;
+	}
+
+	#desktopContent {
+		display: grid;
+	}
+	
+	
+	header {
+		!background: lightblue;
+		width: 768px;
+		margin-left: auto;
+		margin-right: auto;
+		display: flex;
+	}
+
+	#desktopSearchField {
+		width: 500px;
+		height: 30px;
+		margin-left: auto;
+		margin-right: auto;
+		border: solid rgb(236, 236, 236) 2px;
+	}
+
+	#desktopSearchField:focus {
+		outline: none; 
+	}
+
+	#desktopSearchButton {
+		height: 30px;
+		border: solid rgb(236, 236, 236) 2px;
 	}
 }
