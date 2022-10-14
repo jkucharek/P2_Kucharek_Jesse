@@ -1,2 +1,3 @@
 https://www.w3schools.com/howto/howto_js_accordion.asp - Referenced for building accordion on mobile site
 https://www.w3schools.com/HOWTO/howto_css_center-vertical.asp - Referenced for centering items vertically without using absolute references
+https://careerkarma.com/blog/html-copyright-symbol/#:~:text=The%20HTML%20copyright%20symbol%20is,not%20represented%20on%20your%20keyboard. - Referenced for copyright symbol in HTML
