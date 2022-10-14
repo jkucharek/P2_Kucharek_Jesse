@@ -1,0 +1,2 @@
+https://www.w3schools.com/howto/howto_js_accordion.asp - Referenced for building accordion on mobile site
+https://www.w3schools.com/HOWTO/howto_css_center-vertical.asp - Referenced for centering items vertically without using absolute references

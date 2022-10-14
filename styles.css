@@ -409,4 +409,10 @@ main img {
 		margin-top: 0;
 	}
 	
+	#BSandNA {
+		max-width: 60%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
 }
