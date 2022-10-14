@@ -115,6 +115,7 @@ nav a {
 nav a:hover {
 	background: rgb(9, 93, 126);
 	color: rgb(236, 236, 236);
+	transition: 0.2s;
 }
 
 nav a:first-of-type {
@@ -378,14 +379,14 @@ main img {
 
 	nav a:hover {
 		background: initial;
-		color: rgb(9, 93, 126);
+		color: rgb(236, 236, 236);
+		transition: 0.2s;
 	}
 
 	nav a:first-of-type, nav a:last-of-type {
 		border-radius: 0;
 	}
 
-	
 	#banner {
 		display: flex;
 		height: 50px;
@@ -393,9 +394,19 @@ main img {
 		color: rgb(9, 93, 126);
 	}
 	
-	#banner p {
+	#banner a {
 		margin-left: auto;
 		margin-right: auto;
+		color: rgb(9, 93, 126);
+		font-weight: bold;
+	}
+	
+	main {
+		max-width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+		background: initial;
+		margin-top: 0;
 	}
 	
 }

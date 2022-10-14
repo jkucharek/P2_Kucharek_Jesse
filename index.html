@@ -13,13 +13,13 @@
 
 	<body>
 		<div id="mobileContent">
-			<header id="mobileHeader">
-				<div id="logo">ACME</div>
+			<header>
+				<a href="index.html"><div id="logo">ACME</div></a>
 				<div id="title">HOME</div>
 				<div id="hamburger"><span><hr/><hr/><hr/><span></div>
 			</header>
 
-			<nav id="mobileNav">
+			<nav>
 				<a href="allProducts.html">Shop All</a>
 				<a href="sale.html">Sales</a>
 				<a href="bestSellers.html">Best Sellers</a>
@@ -32,14 +32,14 @@
 				<a href="contact.html">Contact us</a>
 			</nav>
 
-			<section id="searchAndCart" class="mobile">
+			<section id="searchAndCart">
 				<input type="text" placeholder="Search..." id="searchField">
 				<input type="image" src="images/search.png" id="searchButton">
 				<div></div>
-				<input type="image" src="images/cart.png" id="cart">
+				<input type="image" src="images/cart.png" id="cart" onclick="loadCart()">
 			</section>
 
-			<section id="banner" class="mobile">
+			<section id="banner">
 				<a href="sale.html">
 					<div>
 						<span>END OF SUMMER SALE</span>
@@ -100,10 +100,10 @@
 
 		<div id="desktopContent">
 			<header id="desktopHeader">
-				<div id="logo">ACME</div>
+				<a href="index.html"><div id="logo">ACME</div></a>
 				<div><input type="text" placeholder="Search..." id="desktopSearchField"></div>
 				<input type="image" src="images/search.png" id="desktopSearchButton">
-				<input type="image" src="images/cart.png" id="cart">
+				<input type="image" src="images/cart.png" id="cart" onclick="loadCart()">
 			</header>
 			
 			<nav id="desktopNav">
@@ -114,8 +114,14 @@
 			</nav>
 			
 			<section id="banner">
-				<p>END OF SUMMER SALE ENDS SOON.  HURRY, SALE ENDS LABOR DAY!</p>
+				<a href="sale.html">END OF SUMMER SALE ENDS SOON.  HURRY, SALE ENDS LABOR DAY!</a>
 			</section>
+			
+			<main>
+				<a href="allProducts.html">
+					<span><img src="images/collage.png"></span>
+				</a>
+			</main>
 
 		</div>
 	</body>

@@ -9,3 +9,7 @@ window.onload = function() {
 	});
 
 };
+
+function loadCart() {
+	window.location = "cart.html";
+}
