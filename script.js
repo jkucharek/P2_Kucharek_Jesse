@@ -13,3 +13,11 @@ window.onload = function() {
 function loadCart() {
 	window.location = "cart.html";
 }
+
+function mobileQuery() {
+	window.location = "https://www.google.com/search?q=" + document.getElementById("searchField").value;
+}
+
+function desktopQuery() {
+	window.location = "https://www.google.com/search?q=" + document.getElementById("desktopSearchField").value;
+}
