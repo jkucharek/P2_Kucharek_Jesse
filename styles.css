@@ -33,7 +33,7 @@ a {
 
 /*header formatting*/
 header {
-	background-color: rgb(254, 215, 0);
+	background: rgb(254, 215, 0);
 	margin: 0;
 	padding: 10px;
 	height: 60px;
@@ -51,7 +51,7 @@ header div {
 }
 
 #logo {
-	background-color: white;
+	background: white;
 	color: red;
 	font-size: 1.25rem;
 	border-radius: 8px;
@@ -73,7 +73,7 @@ header div {
 }
 
 #hamburger:hover {
-	background-color: rgb(9, 93, 126);
+	background: rgb(9, 93, 126);
 }
 
 #hamburger:hover hr {
@@ -102,7 +102,7 @@ nav {
 }
 
 nav a {
-	background-color: rgb(236, 236, 236);
+	background: rgb(236, 236, 236);
 	margin: 0;
 	padding: 1%;
 	font-size: 1.5rem;
@@ -113,12 +113,9 @@ nav a {
 }
 
 nav a:hover {
-	background-color: rgb(9, 93, 126);
+	background: rgb(9, 93, 126);
 	color: rgb(236, 236, 236);
 }
-
-
-
 
 nav a:first-of-type {
 	border-radius: 15px 15px 0px 0px;
@@ -148,7 +145,7 @@ nav a:last-of-type {
 
 #searchField:focus {
 	outline: none; 
-	background-color: rgb(236, 236, 236);
+	background: rgb(236, 236, 236);
 }
 
 #searchButton {
@@ -168,7 +165,7 @@ nav a:last-of-type {
 /*banner formatting*/
 #banner {
 	height: 180px;
-	background-color: rgb(9, 93, 126);
+	background: rgb(9, 93, 126);
 	display: grid;
 	grid-template-columns: auto 180px;
 	margin-top: 20px;
@@ -251,7 +248,7 @@ nav a:last-of-type {
 
 /*main styling*/
 main {
-	background-color: rgb(9, 93, 126);
+	background: rgb(9, 93, 126);
 	margin-top: 10px;
 }
 
@@ -321,11 +318,15 @@ main img {
 	
 	
 	header {
-		!background: lightblue;
+		background: white;
 		width: 768px;
 		margin-left: auto;
 		margin-right: auto;
 		display: flex;
+	}
+	
+	#logo {
+		width: 60px;
 	}
 
 	#desktopSearchField {
@@ -334,6 +335,8 @@ main img {
 		margin-left: auto;
 		margin-right: auto;
 		border: solid rgb(236, 236, 236) 2px;
+		position: relative;
+		left: 60px;
 	}
 
 	#desktopSearchField:focus {
@@ -341,7 +344,58 @@ main img {
 	}
 
 	#desktopSearchButton {
-		height: 30px;
+		height: 32px;
 		border: solid rgb(236, 236, 236) 2px;
+		position: relative;
+		top: 12px;
+		left: 60px;
+		border-left: none;
+		
 	}
+	
+	#cart {
+		position: relative;
+		left: 97px;
+		top: -2px;
+	}
+	
+	nav {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		width: 50%;
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 600px;
+		padding-left: 40px;
+	}
+
+	nav a {
+		background: initial;
+		color: rgb(9, 93, 126);
+		font-weight: 600;
+		border: none;
+	}
+
+	nav a:hover {
+		background: initial;
+		color: rgb(9, 93, 126);
+	}
+
+	nav a:first-of-type, nav a:last-of-type {
+		border-radius: 0;
+	}
+
+	
+	#banner {
+		display: flex;
+		height: 50px;
+		background: rgb(254, 215, 0);
+		color: rgb(9, 93, 126);
+	}
+	
+	#banner p {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
 }

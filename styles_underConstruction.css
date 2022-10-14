@@ -167,8 +167,8 @@ nav a:last-of-type {
 }
 
 
-/*slightly bigger mobile devices*/
-@media (min-width: 600px) {
+/*formatting for tables*/
+@media (min-width: 600px) and (max-width: 1023px){
 	#searchField {
 		font-size: 1.5rem;
 	}
